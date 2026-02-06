@@ -40,13 +40,16 @@ For each movie item, high-dimensional latent embeddings are provided, extracted 
   - Multiscale Vision Transformer (MViT)
 
 ## Resource Contents
-1. **Interaction Data (MMRec format)**  
-   - `train.tsv`, `val.tsv`, and `test.tsv` files  
-   - Standard 8:1:1 train/validation/test split  
+1. **Interaction Data (Original format)**  
 
 2. **Multimodal Feature Files**  
    - JSON files for each encoder (e.g., `text_mpnet.json`, `audio_whisper.json`)  
-   - Each file maps MovieLens item IDs to fixed-length embedding vectors  
+   - Each file maps MovieLens item IDs to fixed-length embedding vectors 
+
+3. **Interaction Data (MMRec format)**
+   - `m3l-10m.inter` and `m3l-20m.inter` files, already formatted in MMRec format
+   - Train, Validation, Test split ratio: 80-10-10
+   - Due to the high dimensionality of the multimodal features, plase find them on our (Zenodo)[] repository
 
 ## Intended Use
 These datasets are designed for **benchmarking and reproducible research** in multimodal recommendation, representation learning, and cross-modal modeling, particularly on large-scale implicit and explicit feedback scenarios.
