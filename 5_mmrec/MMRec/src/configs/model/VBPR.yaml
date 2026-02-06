@@ -1,0 +1,27 @@
+embedding_size: 64
+reg_weight: [1e-02, 1e-03, 1e-04]
+
+# find the best encoder for each modality
+# we set this encoder on the text feature file, while we keep visual encoder empty
+# this avoids code fsils
+
+# text_feature_file: ["text/minilm.npy", "text/mpnet.npy", "text/clip_text.npy"]
+# text_feature_file: ["image/vit.npy", "image/vgg.npy", "image/clip_image.npy"]
+# text_feature_file: ["video/mvit.npy", "video/r2p1d.npy", "video/slowfast.npy"]
+# text_feature_file: ["audio/ast.npy", "audio/vggish.npy", "audio/whisper.npy"]
+
+# vision_feature_file: ''
+
+# now that we have the best single encoder per modality, 
+# we run the experiments with each possible pair of these 4 modalities
+
+# (a) text/mpnet.npy
+# (b) image/clip_image.npy
+# (c) audio/whisper.npy
+# (d) video/mvit.npy
+
+
+text_feature_file: ["audio/whisper.npy"]
+vision_feature_file: ["video/mvit.npy"]
+
+hyper_parameters: ["reg_weight", "text_feature_file", "vision_feature_file"]

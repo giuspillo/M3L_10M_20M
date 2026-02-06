@@ -1,0 +1,1 @@
+Due to GitHub file size restriction, please download the datasets in the MMRec format from our Zenodo: <link>
