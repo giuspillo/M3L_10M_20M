@@ -40,16 +40,25 @@ For each movie item, high-dimensional latent embeddings are provided, extracted 
   - Multiscale Vision Transformer (MViT)
 
 ## Resource Contents
-1. **Interaction Data (Original format)**  
 
-2. **Multimodal Feature Files**  
+1. **Collect raw multimodal file script**
+   - We release the scripts we used to collect multimodal raw files
+   - We release the mappings to movie poster and trailer URLs
+   - We release the text we collected for each movie
+   - Please find a tutorial with a toy example `1_download_raw/tutorial_data_collection.ipynb`
+
+2. **Multimodal feature extraction**
+   - We release the script we used to extract the multimodal features for each modality
+
+3. **Interaction Data**
+   - Interaction Data (Original format)
+   - Python Notebooks to produce the `m3l-10m.inter` and `m3l-20m.inter` files in the MMRec format
+   - Train, Validation, Test split ratio: 80-10-10
+   - Due to the high dimensionality of the multimodal features, please find them on our (Zenodo)[] repository
+
+4. **Multimodal Feature Files**  
    - JSON files for each encoder (e.g., `text_mpnet.json`, `audio_whisper.json`)  
    - Each file maps MovieLens item IDs to fixed-length embedding vectors 
-
-3. **Interaction Data (MMRec format)**
-   - `m3l-10m.inter` and `m3l-20m.inter` files, already formatted in MMRec format
-   - Train, Validation, Test split ratio: 80-10-10
-   - Due to the high dimensionality of the multimodal features, plase find them on our (Zenodo)[] repository
 
 ## Intended Use
 These datasets are designed for **benchmarking and reproducible research** in multimodal recommendation, representation learning, and cross-modal modeling, particularly on large-scale implicit and explicit feedback scenarios.
