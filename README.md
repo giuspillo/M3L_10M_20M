@@ -54,7 +54,7 @@ For each movie item, high-dimensional latent embeddings are provided, extracted 
    - Interaction Data (Original format)
    - Python Notebooks to produce the `m3l-10m.inter` and `m3l-20m.inter` files in the MMRec format
    - Train, Validation, Test split ratio: 80-10-10
-   - Due to the high dimensionality of the multimodal features, please find them on our (Zenodo)[] repository
+   - Due to the high dimensionality of the multimodal features, please find them on our [Zenodo](https://zenodo.org/records/18499145) repository
 
 4. **Multimodal Feature Files**  
    - JSON files for each encoder (e.g., `text_mpnet.json`, `audio_whisper.json`)  

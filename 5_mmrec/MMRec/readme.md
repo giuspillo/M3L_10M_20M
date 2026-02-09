@@ -22,7 +22,7 @@ pip install -r req.txt
 ---
 
 ## 2. Data download
-Due to the GitHub file size limit, su cannot post in this repo the post-processed dataset, so please find them on our [Zenodo]() resource.
+Due to the GitHub file size limit, we cannot publish in this repo the post-processed dataset, so please find them on our [Zenodo](https://zenodo.org/records/18499145) resource. They are already formatted in the MMRec format.
 
 ---
 

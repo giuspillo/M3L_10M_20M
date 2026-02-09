@@ -1,1 +1,1 @@
-Due to GitHub file size restriction, please download the datasets in the MMRec format from our Zenodo: <link>
+Due to GitHub file size restriction, please download the datasets in the MMRec format from our [Zenodo](https://zenodo.org/records/18499145) page, where the datasets are already formatted in the correct format.
