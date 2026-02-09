@@ -16,29 +16,6 @@ The datasets maintain the original MovieLens sparsity characteristics while prov
 | **Sparsity** | 98.66% | 99.29% |
 | **Interaction Coverage** | 94.10% | 93.89% |
 
-## Included Multimodal Features
-For each movie item, high-dimensional latent embeddings are provided, extracted using widely adopted, state-of-the-art encoders:
-
-- **Textual (Movie plots):**
-  - MiniLM  
-  - MPNet  
-  - CLIP-Text  
-
-- **Visual (Movie posters):**
-  - VGG16  
-  - Vision Transformer (ViT)  
-  - CLIP-Image  
-
-- **Acoustic (Movie trailers):**
-  - VGGish  
-  - Whisper  
-  - Audio Spectrogram Transformer (AST)  
-
-- **Video (Movie trailers):**
-  - SlowFast (R50)  
-  - R(2+1)D  
-  - Multiscale Vision Transformer (MViT)
-
 ## Resource Contents
 
 1. **Collect raw multimodal file script**
@@ -67,6 +44,31 @@ For each movie item, high-dimensional latent embeddings are provided, extracted 
 6. **Multimodal Feature Files**  
    - JSON files for each encoder (e.g., `text_mpnet.json`, `audio_whisper.json`)  
    - Each file maps MovieLens item IDs to fixed-length embedding vectors 
+
+## Included Multimodal Features
+For each movie item, high-dimensional latent embeddings are provided, extracted using widely adopted, state-of-the-art encoders:
+
+- **Textual (Movie plots):**
+  - MiniLM  
+  - MPNet  
+  - CLIP-Text  
+
+- **Visual (Movie posters):**
+  - VGG16  
+  - Vision Transformer (ViT)  
+  - CLIP-Image  
+
+- **Acoustic (Movie trailers):**
+  - VGGish  
+  - Whisper  
+  - Audio Spectrogram Transformer (AST)  
+
+- **Video (Movie trailers):**
+  - SlowFast (R50)  
+  - R(2+1)D  
+  - Multiscale Vision Transformer (MViT)
+
+
 
 ## Intended Use
 These datasets are designed for **benchmarking and reproducible research** in multimodal recommendation, representation learning, and cross-modal modeling, particularly on large-scale implicit and explicit feedback scenarios.
