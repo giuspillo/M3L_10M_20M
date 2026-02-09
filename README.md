@@ -45,7 +45,7 @@ For each movie item, high-dimensional latent embeddings are provided, extracted 
    - We release the scripts we used to collect multimodal raw files
    - We release the mappings to movie poster and trailer URLs
    - We release the text we collected for each movie
-   - Please find a tutorial with a toy example `1_download_raw/tutorial_data_collection.ipynb`
+  Please find our fully **working tutorial** with a toy movie and follow the whole pipeline for downloading raw data. It can be accessed at `1_download_raw/tutorial_data_collection.ipynb`
 
 2. **Multimodal feature extraction**
    - We release the script we used to extract the multimodal features for each modality
