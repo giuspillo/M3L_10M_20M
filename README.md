@@ -25,7 +25,7 @@ The datasets maintain the original MovieLens sparsity characteristics while prov
    - Please find our fully **working tutorial** with a toy movie and follow the whole pipeline for downloading raw data. It can be accessed at `1_download_raw/tutorial_data_collection.ipynb`
 
 2. **Multimodal feature extraction**
-   - We release the script we used to extract the multimodal features for each modality. For futher details please refer [this documentation](2_features_extraction/README.md)
+   - We release the script we used to extract the multimodal features for each modality. For further details, please refer [this documentation](2_features_extraction/README.md).
 
 3. **Interaction Data**
    - Interaction Data (Original format)
