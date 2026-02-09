@@ -42,19 +42,6 @@ pip install -r video_reqs.txt
 
 ---
 
-## 📂 Data Structure
-
-The scripts expect data to be organized in a `data/` directory as follows:
-
-```text
-data/
-├── REPRO_plot_text.tsv        # Tab-separated file with movie_id and plot
-├── map_movieid_trailerpath.tsv # Mapping between movie IDs and trailer video paths
-└── poster/                    # Folder containing movie poster images (e.g., {movie_id}.jpg)
-```
-
----
-
 ## 💻 Usage
 
 All extraction scripts are located in the `src/` directory.
