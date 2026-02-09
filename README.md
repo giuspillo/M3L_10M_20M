@@ -39,7 +39,7 @@ The datasets maintain the original MovieLens sparsity characteristics while prov
 5. **Quantitative analysis**
    - We release the script we used to conduct our quantitative analysis with [MMRec](https://github.com/enoche/MMRec/tree/master/src).
    - Please use data we posted on our [Zenodo](https://zenodo.org/records/18499145) repository due to GitHub file size limits.
-   - More details can be found in the [related folder](https://github.com/giuspillo/M3L_10M_20M/tree/main/5_mmrec/MMRec).
+   - More details can be found in the [related folder](https://github.com/giuspillo/M3L_10M_20M/tree/main/5_mmrec/).
 
 6. **Multimodal Feature Files**  
    - JSON files for each encoder (e.g., `text_mpnet.json`, `audio_whisper.json`)  
