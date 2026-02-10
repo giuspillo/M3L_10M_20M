@@ -38,8 +38,8 @@ To ensure a fair and consistent evaluation, we fix the embedding dimensionality 
 
 Then, for each model, we consider the following hyperparameters:
 * **BPR** and **VBPR**: We perform a grid search for the $L_2$ regularization coefficient $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$. 
-* **LATTICE**: In addition $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the number of GCN layers $l \in \{1, 2, 3\}$.
-* **FREEDOM**: In addition $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the depth of both the user-item CF branch ($l_{ui}$) and the multimodal branch ($l_{mm}$), where $l_{ui}, l_{mm} \in \{1, 2, 3\}$
+* **LATTICE**: In addition to $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the number of GCN layers $l \in \{1, 2, 3\}$.
+* **FREEDOM**: In addition to $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the depth of both the user-item CF branch ($l_{ui}$) and the multimodal branch ($l_{mm}$), where $l_{ui}, l_{mm} \in \{1, 2, 3\}$
 
 
 In `src/configs/model` it is possible to customize the various parameters and hyperparameters of each model. For our analysis, we set:
