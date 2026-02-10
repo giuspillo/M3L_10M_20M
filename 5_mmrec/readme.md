@@ -32,16 +32,15 @@ The framework is pre-configured with the following settings across all scripts:
 - Dataset: Defaults to `m3l-10m`.
 - Persistence: The `save_model` flag is enabled (True) to automatically store the best model checkpoints in the `saved/` directory.
 
-### Model Configuration % Hyperparameters
+### Model Configuration and Hyperparameters
 
 To ensure a fair and consistent evaluation, we fix the embedding dimensionality to $d=64$ for all models, following standard practice in the recommendation literature. 
 
-We perform a grid search for the $L_2$ regularization coefficient $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$. 
+Then, for each model, we consider the following hyperparameters:
+* **BPR** and **VBPR**: We perform a grid search for the $L_2$ regularization coefficient $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$. 
+* **LATTICE**: In addition $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the number of GCN layers $l \in \{1, 2, 3\}$.
+* **FREEDOM**: In addition $\lambda \in \{10^{-2}, 10^{-3}, 10^{-4}\}$, we optimize the depth of both the user-item CF branch ($l_{ui}$) and the multimodal branch ($l_{mm}$), where $l_{ui}, l_{mm} \in \{1, 2, 3\}$
 
-* **BPR & VBPR:** These represent the only hyperparameters tuned.
-* **Graph-based Models:** We explore additional architecture-specific parameters:
-    * **LATTICE:** We optimize the number of GCN layers $l \in \{1, 2, 3\}$.
-    * **FREEDOM:** We tune the depth of both the user-item CF branch ($l_{ui}$) and the multimodal branch ($l_{mm}$), where $l_{ui}, l_{mm} \in \{1, 2, 3\}$.
 
 In `src/configs/model` it is possible to customize the various parameters and hyperparameters of each model. For our analysis, we set:
 
